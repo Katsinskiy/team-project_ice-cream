@@ -1,37 +1,268 @@
-<article class="example" id="uk">
-  <h1>HTML-partials</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice Cream</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
 
-  <!--
-    ❗️❗️❗️ The path to images from the HTML partial
-    is the same as from the index.html file
-  -->
-  <img src="images/logo.png" alt="" width="320" />
+  <body>
+    <!----------------------------- Hero header ---------------------------->
+    <header class="header-page">
+      <div class="container">
+        <nav class="header-page__nav">
+          <a href="">логотип</a>
+          <button type="button">
+            <svg>
+              <use></use>
+              <use></use>
+              кнопка
+            </svg>
+          </button>
+          <div class="mob-menu">
+            <button class="button" type="button">Buy now</button>
+            <ul class="mob-munu__list">
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link">Home</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link">About us</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link">How it's made?</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link">Our products</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">ice cream made with <span>passion</span></h1>
+          <button class="button" type="button">Products</button>
+          <button class="button" type="button">How it`s made?</button>
+        </div>
+      </section>
+      <!-------------------------- Products / Продукты ----------------------------->
+      <section class="products">
+        <div class="container">
+          <p class="products__pre-title">100% natural</p>
+          <h2 class="products__title">products</h2>
+          <ul class="prod-card">
+            <li class="prod-card__item">
+              <h3 class="prod-card__title">ice cream</h3>
+              <p class="prod-card__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab
+                mollitia iure voluptas vitae maxime quaerat vel accusantium
+                culpa amet esse.
+              </p>
+              <a href="" class="prod-card__link"></a>
+            </li>
+            <li class="prod-card__item">
+              <h3 class="prod-card__title">ice coffee</h3>
+              <p class="prod-card__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab
+                mollitia iure voluptas vitae maxime quaerat vel accusantium
+                culpa amet esse.
+              </p>
+              <a href="" class="prod-card__link"></a>
+            </li>
+            <li class="prod-card__item">
+              <h3 class="prod-card__title">milkshakes</h3>
+              <p class="prod-card__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab
+                mollitia iure voluptas vitae maxime quaerat vel accusantium
+                culpa amet esse.
+              </p>
+              <a href="" class="prod-card__link"></a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-  <p>
-    The
-    <a
-      href="https://github.com/posthtml/posthtml-include"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      posthtml-include
-    </a>
-    plugin allows you to add code from other HTML files (fragments) to HTML page
-    files. Fragments are stored in the <code>src/partials</code> folder. The
-    addition occurs when compiling page files, such as <code>index.html</code>.
-  </p>
+      <!--------------------------About / Чем мы занимаемся ------------------------->
+      <section class="about">
+        <div class="container">
+          <p class="about__pre-title">tradition and love</p>
+          <h2 class="about__title">how it’s made?</h2>
+          <img class="about__img" src="" alt="cow" />
+          <p>
+            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+            justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
+            erat at justo fringilla.
+          </p>
+          <p>
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio
+            elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+            euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras
+            massa nibh, tincidunt.
+            <span>Aliquam erat volutpat. Aenean accumsan.</span>
+          </p>
+          <button class="button" type="button">Read more</button>
+        </div>
+      </section>
+      <!---------------------- Advantages / Наши преймущества -------------------------->
+      <section class="advance">
+        <div class="container">
+          <h2 class="advance__title">Advantages</h2>
+          <ul class="advance__list">
+            <li class="advance__item">
+              <p class="advance__number">721</p>
+              <p class="advance__text">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+            <li class="advance__item">
+              <p class="advance__number">16kg</p>
+              <p class="advance__text">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+            <li class="advance__item">
+              <p class="advance__number">84</p>
+              <p class="advance__text">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--------------------------- Gallery / Галлерея -------------------------------->
+      <section class="gallery">
+        <div class="container">
+          <h2 class="gallery__title">gallery</h2>
+          <img class="gallery__img" src="" alt="gallery" />
+        </div>
+      </section>
+      <!--------------------- Customer Reviews / Отзывы клиентов --------------------->
+      <section class="reviews">
+        <div class="container">
+          <img class="reviews__img" src="" alt="Customer" />
+          <p class="reviews__text">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+            Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+            ipsum primis in nibh vel risus.
+          </p>
+          <p class="reviews__name">Emily, Los Angeles</p>
+          <ul>
+            <li>домик</li>
+            <li>кружечек</li>
+            <li>кружечек</li>
+          </ul>
+        </div>
+      </section>
+      <!--------------------- Contacts/ контакты --------------------->
+      <section class="contacts">
+        <div class="container">
+          <h2 class="contacts__title">contacts</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__point">CAFE</p>
+              <p class="contacts__city">Chicago</p>
+              <p class="contacts__text">
+                Fusce ut velit laoreet, tempus arcu molestie vulputate
+              </p>
+              <p class="contacts__days">Monday - Friday</p>
+              <p class="contacts__time">06:00 AM - 10:00 PM</p>
+              <p class="contacts__days">Saturday - Sunday</p>
+              <p class="contacts__time">08:00 AM - 16:00 PM</p>
+              <address>
+                <a href="tel:+610383766284">+61(0) 383 766 284</a>
+                <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+              </address>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__point">FOOD TRUCK</p>
+              <p class="contacts__city">Los Angeles</p>
+              <p class="contacts__text">
+                Fusce ut velit laoreet, tempus arcu molestie vulputate
+              </p>
+              <p class="contacts__days">Monday - Friday</p>
+              <p class="contacts__time">06:00 AM - 10:00 PM</p>
+              <p class="contacts__days">Saturday - Sunday</p>
+              <p class="contacts__time">08:00 AM - 16:00 PM</p>
+              <address>
+                <a href="tel:+610383766284">+61(0) 383 766 284</a>
+                <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+              </address>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__point">CAFE</p>
+              <p class="contacts__city">New York</p>
+              <p class="contacts__text">
+                Fusce ut velit laoreet, tempus arcu molestie vulputate
+              </p>
+              <p class="contacts__days">Monday - Friday</p>
+              <p class="contacts__time">06:00 AM - 10:00 PM</p>
+              <p class="contacts__days">Saturday - Sunday</p>
+              <p class="contacts__time">08:00 AM - 16:00 PM</p>
+              <address>
+                <a href="tel:+610383766284">+61(0) 383 766 284</a>
+                <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+              </address>
+              <button type="button" class="buttons">Our Locations</button>
+              <button type="button" class="buttons">Franchise</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!----------------------------------- FOOTER / подвал ------------------------------------->
+    <footer class="page-footer">
+      <div class="container">
+        <p class="page-footer__pre-title">homemade ice cream made</p>
+        <p class="page-footer__title">with passion</p>
+        <ul class="social">
+          <li class="social__item">
+            <a href="" class="social__link" target="_blank">
+              <svg class="social__icon">
+                <use href=""></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link" target="_blank">
+              <svg class="social__icon">
+                <use href=""></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link">
+              <svg class="social__icon">
+                <use href=""></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <address>
+          Feel free to contact
+          <a href="tel:+610383766284">+61(0) 383 766 284</a>
+        </address>
+        <div>&#169 2019 - IceCream. All Rights Reserved.</div>
+      </div>
+    </footer>
 
-  <p>
-    This <code>example.html</code> file is an example of such a snippet, with
-    the markup of a certain part of the main page. This is very convenient for
-    team development on student projects, when several people write in one HTML
-    file at once.
-  </p>
-
-  <p>
-    The syntax for adding a fragment to the main file is:
-    <code> &lt;include src="./partials/filename.html" /&gt;</code>
-  </p>
-
-  <div class="background"></div>
-</article>
+    <!--------------------------- Modal / Модальное окно --------------------------------->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__button" data-modal-close></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
